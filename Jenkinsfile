@@ -23,6 +23,12 @@ pipeline {
                 input 'Approved to Deploy ?'
             }
         }
+        stage('execute') {
+            steps {
+                sh 'java test'
+            }
+        }
+        
         stage('deploy') {
             steps {
                 sh 'echo deploy'
