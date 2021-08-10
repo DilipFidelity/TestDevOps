@@ -10,8 +10,7 @@ pipeline {
         stage('build') {
             steps {
             echo 'build is started'
-                sh 
-                'javac test.java'
+                sh 'javac test.java'
             }
         }
         stage('execute test') {
